@@ -1,0 +1,443 @@
+﻿/*******************************************************************************
+ 
+* Laboration 4, Kurs: DT146G
+ 
+* File: style.css
+ 
+* Desc: Style sheets for laboration 4
+ 
+* 
+ 
+* Iana Kalinichenko
+ 
+* iaka1500
+ 
+* iaka1500@student.miun.se
+ 
+******************************************************************************/
+
+/* General style*/
+
+		body {
+            max-width: 960px; /* It was a bit unclear whether 
+			this requirement should be kept from the previous lab or whether it should be change to the responsive version,
+			but since it's overriden by @media-rules, it doesn't matter much*/
+			text-align: center;  
+			background-image: url("../img/background.jpg");  
+			background-repeat: no-repeat;
+			background-size: 110% 100%;
+			margin: 0px;
+			padding: 0px;
+            	}
+
+		a {
+            text-decoration: none;
+            	}
+
+		.huvudsektion {
+            		border-style: solid;
+			border-color: rgb(14,92,201);
+			border-width: 0.2em;
+			height: 26%;
+			width: 100%;
+            	}
+
+		h1 {
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			color: rgb(14,92,201);
+            	}
+
+		.navigationslaenkar {
+            background-color: rgb(14,92,201);
+			width: 100%;
+			height: 15%;
+            	}
+
+		.innehaalssektion {
+            		height: 66%;
+            	}
+
+		h2 {
+            font-family: Candara, sans-serif;
+			color: rgb(14,92,201);
+			font-size: 1.6em;
+            	}
+
+		.welcome {
+            color: rgb(72, 161, 255);
+			font-weight: bold;
+			font-size: 1.5em;
+			font-family: Candara, sans-serif;
+            	}
+
+		.fotsektion {
+            border-top-style: solid;
+			border-top-color: rgb(14,92,201);
+			border-top-width: 0.2em;
+			background-color: rgb(166,201,249);
+			font-size: 0.8em;
+			padding: 0.3%;
+			width: 100%;
+			float: left;
+			margin-top: 1%;
+            	}
+
+		.copyright {
+ 			font-size: 0.7em;
+			text-transform: uppercase;
+            	}
+		
+		nav i {
+    		float: left;
+			color: white;
+		}
+
+		nav a {
+            color: white;
+			padding: 1%;
+			margin: 3%;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			border-left-style: solid;
+			border-right-style: solid;
+			text-align: center;
+			height: 10%;
+			font-size: 1em;
+            	}
+
+		a.chosen {
+            background-color: white;
+			color: rgb(14,92,201);
+			border-style: solid;
+			
+            	}
+
+		h3 {
+            font-family: Candara, sans-serif;
+			color: rgb(14,92,201);
+			font-size: 1.3em;
+	
+            	}
+
+		ul {
+            font-size: 0.9em;
+			font-family: Candara, sans-serif;
+			list-style-type: none;
+            	}
+
+		ul strong {
+            		color: rgb(166,201,249);
+            	}
+
+		p, #bookingForm {
+            font-family: Candara, sans-serif;
+			color: rgb(14,92,201);
+			font-size: 1em;
+            	}
+
+		.contact-button {
+			margin: 2%;
+			padding: 0%;
+ 			border-style: solid;
+			border-color: white;
+			background-color: white;
+			border-radius: 2em;
+            	}
+
+		#browser {
+			margin: 2%;
+			padding: 0%;
+ 			border-style: solid;
+			border-color: rgb(14,92,201);
+			background-color: white;
+			border-radius: 2em;
+			position: relative;
+			z-index: -1; /*otherwise, it covers the menu on a small screen*/
+            	}
+
+		.thumbnail-pic {
+			border-style: solid;
+			border-color: rgb(14,92,201);
+			margin: 0%;
+			padding: 0%;
+			width: 40%;
+			float: left;
+            	}
+
+		#thumbnails{
+			background-color: rgb(14,92,201);
+			width: 40%;
+			margin: 1% 1% 1% 20%;
+            	}
+
+		#realpic{
+			background-color: rgb(14,92,201);
+			width: 30%;
+			margin: 1% 10% 1% 55%;
+            	}
+		
+		#realpic figure{
+			background-color: rgb(14,92,201);
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+            	}
+		
+		#realpic img{
+			background-color: rgb(14,92,201);
+			width: 70%;
+			margin: 0;
+			padding: 1%;
+            	}
+		
+		section section p, figcaption{
+			padding: 2%;
+			color: white;
+			font-size: 90%;
+			font-style: italic;
+            	}
+
+		figcaption{
+			padding: 2.5%;
+			color: white;
+			font-style: normal;
+				}
+		
+		#bookings{
+			width: 90px;
+			height: 180px;
+			border-style: solid;
+			border-color: rgb(14,92,201);
+			margin: 1%;
+			padding: 0%;
+			z-index: -1;
+			float: right;
+				}
+
+		section div {
+			
+			position: absolute;
+			z-index: 1;
+				}
+
+		#bookingForm{
+			width: 30%;
+			border-style: solid;
+			border-color: rgb(14,92,201);
+			text-align: left;
+			margin: 1%;
+			padding: 2%;
+			float: left;
+				}
+
+		input{
+			width: 90%;
+				}
+
+		hr{
+			color: rgb(14,92,201);
+				}
+		#submitButton, #resetButton {
+			border-style: solid;
+			border-radius: 1em;
+			font-family: Candara, sans-serif;
+			color: white;
+			font-size: 1em;
+				}
+		
+		#submitButton{
+			background-color: green;
+				}
+						
+		#resetButton{
+			background-color: red;
+				}
+
+/* Styles adapted to different screen resolutions */
+
+@media screen and (max-width: 480px){
+        	body {
+            max-width: 100%;
+			background-size: cover;
+            	}
+
+		.navigationslaenkar {
+			width: 25px;
+			height: 25px;
+			padding: 0%;
+			margin: 0%;
+			cursor: pointer;
+			float: left;
+			position: relative;
+    		display: inline-block;
+            	}
+
+		h2 {
+			font-size: 1.3em;
+            	}
+
+		.welcome {
+			font-size: 1.2em;
+            	}
+
+		.fotsektion {
+			font-size: 0.7em;
+            	}
+
+		.copyright {
+ 			font-size: 0.6em;
+            	}
+
+		.navigationslaenkar a {
+			border: none;
+			display: none;
+            	}
+
+		.navigationslaenkar:hover a{
+			width: 500%;
+    		display: block;
+			background-color: rgb(14,92,201);
+		}
+
+		a.chosen {
+			color: white;
+			border: none;
+			font-weight: bold;
+            	}
+
+		.contact-button {
+			border-color: red;
+			color: white;
+			background-color: red;
+            	}
+
+		.contact-button a {
+			color: white;
+			font-weight: bold;
+				}
+		
+		#bookings{
+			width: 90px;
+			height: 180px;
+				}
+}/*end screen and (max-width: 480px)*/
+
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+        	body {
+            		max-width: 100%;
+            	}
+
+		nav a {
+            		font-size: 0.9em;
+            	}
+
+		.contact-button {
+			border-color: blue;
+			color: white;
+			background-color: blue;
+
+            	}
+
+		.contact-button a {
+			color: white;
+			font-weight: bold;
+				}
+		
+		#bookings{
+			width: 270px;
+			height: 540px;
+				}
+}/*end screen and (min-width: 481px) and (max-width: 1024px)*/
+
+@media screen and (min-width: 1025px) {
+        	body {
+            		max-width: 100%;
+            	}
+
+		h1 {
+			font-size: 2em;
+            	}
+
+		h2 {
+			font-size: 1.8em;
+            	}
+
+		.welcome {
+			font-size: 1.6em;
+            	}
+
+		.fotsektion {
+			font-size: 0.9em;
+            	}
+
+		.copyright {
+ 			font-size: 0.8em;
+            	}
+
+		h3 {
+            		font-size: 1.4em;
+            	}
+
+		ul {
+            		font-size: 1.2em;
+            	}
+
+		p {
+			font-size: 1.1em;
+            	}
+
+		.contact-button {
+			border-color: green;
+			color: white;
+			background-color: green;
+            	}
+
+		.contact-button a {
+			color: white;
+			font-weight: bold;
+				}
+		
+		#bookings{
+			width: 540px;
+			height: 1080px;
+				}
+}/*end screen and (min-width: 1025px) */
+
+@media print{
+
+		body { 
+			background-color: white;  
+            	}
+
+		.huvudsektion {
+			border: none;
+            	}
+
+		h1 {
+            font-family: serif;
+			color: blue;
+            	}
+
+
+		h2 {
+            font-family: serif;
+			color: black;
+            	}
+
+		.welcome {
+            color: black;
+			font-family: serif;
+            	}
+
+		.fotsektion {
+            border-top-style: solid;
+			border-top-color: blue;
+			background-color: white;
+            	}
+
+		
+		.logotyp, .navigationslaenkar, i, #browser, #realpic{
+    			display: none;
+		}
+}/*end print*/

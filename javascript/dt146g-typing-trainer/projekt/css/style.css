@@ -1,0 +1,233 @@
+/*
+** Iana Kalinichenko
+** iaka1500
+** iaka1500@student.miun.se
+** DT146G Projektarbete, stylesheet
+** December 2017 - Januari 2018
+*/
+
+/* Main parts */
+html{
+    background: url("../img/background.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    padding: 0;
+    border: 2px groove #2E221E;
+}
+
+header {
+    height: 30%;
+    margin: auto;
+    padding: 2%;
+}
+
+main {
+    height: 50%;
+    margin: 0% 5% 10%;
+    font-family: Calibri, sans-serif;
+}
+
+footer {
+    height: 20%;
+    background-color:  #9DC4B8;
+    border-top: 2px solid #2E221E;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    color: #BE412E;
+    font-family: "American Typewriter Light", Consolas, monospace;
+    font-size: small;
+    font-style: italic;
+    font-variant: small-caps;
+    font-stretch: expanded;
+}
+
+footer p {
+    margin: 0%;
+    padding: 0%;
+}
+
+br {
+    margin: 5%;
+    clear: right;
+}
+
+label {
+    text-align: center;
+    margin: auto;
+    padding: 1% 25%;
+}
+
+form select {
+    width: 100%;
+    background-color: #BE412E;
+    color: white;
+    font-family: Calibri, sans-serif;
+    font-size: 100%;
+    padding: 1%;
+    border-style: solid;
+    border-color: #BE412E;
+    border-radius: 10%;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    color: #BE412E;
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+h6 {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    color: #F4AF91;
+}
+
+article p{
+    text-align: left;
+    font-family: "American Typewriter Regular", Inconsolata, monospace;
+    font-size: small;
+    color: black;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    margin-top: 1%;
+    margin-left: 260px;
+    margin-right: 300px;
+    margin-bottom: auto;
+    background-color: #F4AF91;
+}
+
+textarea {
+    resize: none;
+}
+
+button[value="start"] {
+    background-image: url("../img/start.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+button[value="stop"] {
+    background-image: url("../img/stop.jpg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+/* Links */
+footer a:link {
+    text-decoration: none;
+    color: #2E221E;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0%;
+    padding: 0%;
+}
+
+footer a:visited {
+    text-decoration: none;
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+}
+
+/* Classes */
+.logo {
+    width: 30%;
+    margin-left: 20%;
+}
+
+.logo-label {
+    width: 30%;
+    display: inline;
+    font-family: "WorkSans SemiBold", "Lucida Bright", sans-serif;
+    font-style: italic;
+    font-variant: small-caps;
+    animation: animate 1s ease-in-out infinite;
+}
+
+.bordered-content {
+    display: block;
+    width: 70%;
+    margin: auto;
+    border-style: solid;
+    border-width: 0.3em;
+    border-color: #BE412E;
+    padding: 1%;
+}
+
+.marked {
+    background-color: gainsboro;
+    font-weight: bold;
+}
+
+.correct {
+    color: cadetblue;
+}
+
+.incorrect {
+    color: red;
+}
+
+.data {
+    color: #BE412E;
+}
+
+/* Individual elements */
+#settings {
+    float: left;
+
+}
+
+#textChooser {
+    float: right;
+    padding-bottom: 1%;
+
+}
+
+#textInput {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#statistics {
+    margin-top: 5%;
+    margin-left: 40%;
+    width: 60%;
+    text-align: right;
+    font-family: "American Typewriter Light", Menlo, monospace;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url(../font/LibreBaskerville-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "WorkSans SemiBold";
+    src: url(../font/WorkSans-SemiBold.ttf);
+    font-weight: bold;
+}
+
+/* Animation */
+@keyframes animate {
+    from { font-size: 150%; text-shadow: 2px 2px  #9DC4B8; color: #2E221E;}
+    to { font-size: 151%; text-shadow: 2px 2px  #2E221E; color: #9DC4B8;}
+}

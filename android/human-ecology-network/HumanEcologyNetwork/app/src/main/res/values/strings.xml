@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Human Ecology Network</string>
+    <string name="hen_description">HEN - Human Ecology Network</string>
+    <string name="favourites">My favourite events</string>
+    <string name="make_my_favourite">My favourite event</string>
+    <string name="all_events">Our events</string>
+    <string name="each_event">Event Details</string>
+    <string name="title_prompt">The title of the event&#8230;</string>
+    <string name="date_prompt">On which date:</string>
+    <string name="time_prompt">At which time:</string>
+    <string name="city_prompt">At which city</string>
+    <string name="address_prompt">At which address</string>
+    <string name="description_prompt">Add description</string>
+    <string name="add_event">Add event</string>
+    <string name="update_event">Update event</string>
+    <string name="delete_event">Delete event</string>
+    <string name="search_event">Search for an event</string>
+    <string name="quest_search">Find events in a city of your choice:</string>
+    <string name="which_city">Enter a city&#8230;</string>
+    <string name="search">Search</string>
+
+    <string-array name="menu">
+        <item>All events</item>
+        <item>Search for an event</item>
+        <item>Add your event</item>
+    </string-array>
+</resources>

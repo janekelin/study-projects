@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EventDetailsActivity"
+    >
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar" />
+
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        />
+
+    <EditText
+        style="@style/Title"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        style="@style/Heading"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="2dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        style="@style/Category"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:inputType="text"
+        />
+
+    <EditText
+        style="@style/Heading"
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        style="@style/Category"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <EditText
+        style="@style/Text"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:inputType="text|textMultiLine"
+        />
+
+    <CheckBox
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_my_favourite"
+        android:onClick="onFavouriteClicked"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding = "16dp"
+        >
+
+        <Button
+            android:id="@+id/update_event"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_margin="16dp"
+            android:background="@android:color/holo_orange_light"
+            android:gravity="center"
+            android:onClick="onUpdateEvent"
+            android:text="@string/update_event"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/delete_event"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_red_light"
+            android:onClick="onDeleteEvent"
+            android:text="@string/delete_event"
+            android:layout_margin="16dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

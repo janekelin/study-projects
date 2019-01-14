@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<!--
+Iana Kalinichenko
+iaka1500
+iaka1500@student.miun.se
+DT146G Projektarbete, HTML-sida
+December 2017 - Januari 2018
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <title>DT146G HT17, Project, Iana Kalinichenko</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Application's logo" class="logo">
+        <h1 class="logo-label">TypeSkylt</h1> <!-- The project description said to use "label" for application name,
+                                                however it was unclear whether the <label>-tag was meant;
+                                                in my opinion, semantically the <label>-tag does not fit for this purpose,
+                                                that is why the ordinary <h1> was used. -->
+    </header>
+
+    <main>
+
+        <form id="settings">
+            <input type="checkbox" name="case-sensitivity" value="ignore-casing">Ignore Casing
+            <br />
+            <input id="swedishTexts" type="radio" name="swedish" value="sv">Swedish
+            <input id="englishTexts" type="radio" name="english" value="en">English
+        </form>
+
+        <form id="textChooser">
+            <label for="texts">Choose text</label>
+            <br />
+            <select id="texts" name="texts">
+                <option id="text1" value="text1">Choose the language first</option>
+                <option id="text2" value="text2">Choose the language first</option>
+                <option id="text3" value="text3">Choose the language first</option>
+            </select>
+        </form>
+
+        <br />
+
+        <article id="textToType" class="bordered-content">
+            <h3 id="textTitle"></h3>
+            <h6 id="textAuthor"></h6>
+            <p id="textContent"></p>
+        </article>
+
+        <form id="typedText">
+            <textarea id="textInput" name="textInput" class="bordered-content" rows="1" disabled>Type here...</textarea>
+            <button type="button" id="playButton"></button>
+        </form>
+
+        <section id="statistics">
+            <table>
+                <tr>
+                    <td>Gross WPM: <span id="grossWPM" class="data"></span></td>
+                    <td>Accuracy: <span id="accuracy" class="data"></span></td>
+                </tr>
+                <tr>
+                    <td>Net WPM: <span id="netWPM" class="data"></span></td>
+                    <td>Errors: <span id="errors" class="data"></span></td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <details>
+            <summary>&copy; Copyright 2017-2018</summary>
+            <p> - by Iana Kalinichenko. No Rights Reserved.</p>
+            <address><a href="mailto:iaka1500@student.miun.se">Contact me -> </a></address>
+        </details>
+    </footer>
+</body>
+</html>

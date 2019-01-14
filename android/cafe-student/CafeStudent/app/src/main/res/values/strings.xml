@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Cafe Student</string>
+    <string name="create_order">Beställning</string>
+    <string name="create_order_title">Att beställa</string>
+    <string name="title_top">Välkommen!</string>
+    <string name="home_tab">Start</string>
+    <string name="food_tab">Mackor</string>
+    <string name="drinks_tab">Drycker</string>
+    <string name="orders_tab">Kundvagn</string>
+    <string name="heading">Välkommen till Cafe Student!</string>
+    <string name="cafe_image">Bilden på vår Cafe</string>
+    <string name="info">Välj + för att förbeställa våra mackor.
+        Aktuell beställning visas i Kundvagn.
+        Vårt utbud hittar du under Mackor och Drycker.</string>
+
+    <string name="question_food">Vilken macka?</string>
+    <string name="question_day">Vilken dag?</string>
+    <string name="question_time">Vilken tid?</string>
+    <string name="button_order">Beställ</string>
+    <string name="no_order">"Du har inga aktuella beställningar</string>
+
+    <string-array name="drinks">
+        <item>Ramlösa, 10 kr</item>
+        <item>Äppeljuice, 25 kr</item>
+        <item>Havremjölk, 15 kr</item>
+        <item>Mjölk, 10 kr</item>
+    </string-array>
+
+    <string-array name="food">
+        <item>ostmacka</item>
+        <item>sandwich med skinka</item>
+        <item>laxwrap</item>
+        <item>köttbullemacka</item>
+    </string-array>
+
+    <string-array name="times">
+        <item>kl.10</item>
+        <item>kl.12</item>
+        <item>kl.14</item>
+    </string-array>
+
+
+
+</resources>
